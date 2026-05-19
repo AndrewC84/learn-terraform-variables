@@ -1,10 +1,10 @@
 terraform {
-  cloud {
+  /*cloud {
     organization = "policy-as-code-training"
     workspaces {
       name = "tf-vault-qa-ATC"
     }
-  }
+  }*/
   
   required_providers {
     aws = {
@@ -36,7 +36,7 @@ module "vpc" {
 
   tags = {
     project     = "project-alpha",
-    environment = "dev"
+    environment = "development"
   }
 }
 
